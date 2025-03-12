@@ -28,36 +28,36 @@ int main(void) {
     K[2][2] = 1;
     XX[3][0] = 1;
     /*Masukkan input untuk lambda dan matriks yang dibutuhkan*/
-    printf("Masukkan nilai fx >>>");
+    printf("Masukkan nilai fx >>> ");
     scanf("%f", &K[0][0]);
 
-    printf("Masukkan nilai fy >>>");
+    printf("Masukkan nilai fy >>> ");
     scanf("%f", &K[1][1]);
 
-    printf("Masukkan nilai cx >>>");
+    printf("Masukkan nilai cx >>> ");
     scanf("%f", &K[0][2]);
 
-    printf("Masukkan nilai cy >>>");
+    printf("Masukkan nilai cy >>> ");
     scanf("%f", &K[1][2]);
 
-    printf("Masukkan nilai X >>>");
+    printf("Masukkan nilai X >>> ");
     scanf("%f", &XX[0][0]);
 
-    printf("Masukkan nilai Y >>>");
+    printf("Masukkan nilai Y >>> ");
     scanf("%f", &XX[1][0]);
 
-    printf("Masukkan nilai Z >>>");
+    printf("Masukkan nilai Z >>> ");
     scanf("%f", &XX[2][0]);
 
     for(int i = 0; i<3; ++i){
         for(int j = 0; j<3; ++j){
-            printf("Masukkan nilai r[%f][%f]>>>", i+1, j+1);
+            printf("Masukkan nilai r[%d][%d]>>> ", i+1, j+1);
             scanf("%f", &RT[i][j]);
         }
     }
 
     for(int i = 0; i<3; ++i){
-        printf("Masukkan nilai t[%f]>>>", i+1);
+        printf("Masukkan nilai t[%d]>>> ", i+1);
         scanf("%f", &RT[i][3]);
     }
 
@@ -87,7 +87,7 @@ int main(void) {
 
     /*Menampilkan output program*/
     for(int i = 0; i<3; ++i){
-        printf("Nilai untuk UV[%.2f] adalah %.2f.\n", i+1, UV[i][0]); 
+        printf("Nilai untuk UV[%d] adalah %.2f\n", i+1, UV[i][0]); 
     }
 
     printf("Diperoleh nilai lambda yaitu %.0f", lambda);
