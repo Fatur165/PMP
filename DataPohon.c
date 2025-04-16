@@ -90,7 +90,7 @@ int main() {
    float lat, lon, diameter;
 
     do {
-       printf("\nMAU NGAPAIN?\n");
+       printf("\n==MENU INVENTORI POHON SAWIT==\n");
        printf("1. Tambah Pohon\n");
        printf("2. Lihat Semua Pohon\n");
        printf("3. Hapus Pohon berdasarkan ID\n");
